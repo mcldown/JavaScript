@@ -1,0 +1,103 @@
+/* General resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(180deg, #070807 50%, #dc143c 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Input section styling */
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+input[type="date"],
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+input:focus,
+button:focus {
+  border-color: #55d0f0;
+}
+
+button {
+  background-color: #14141c;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a1a28;
+}
+
+/* Output section styling */
+.output-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.output-wrapper div {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+span {
+  display: block;
+  font-size: 2rem;
+  color: #141414;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #707070;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .output-wrapper {
+    flex-direction: column;
+  }
+
+  .output-wrapper div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
